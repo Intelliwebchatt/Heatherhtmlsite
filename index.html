@@ -1,0 +1,217 @@
+`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heather Glenn - National Account Executive | FM Payments</title>
+    <style>
+        /* CSS styles will be added here */
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <img src="/api/placeholder/200/200" alt="Heather Glenn" />
+            <h1>Heather Glenn</h1>
+            <h2>National Account Executive</h2>
+            <p>FM Payments</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>As a National Account Executive at FM Payments, I'm dedicated to providing innovative payment solutions tailored to your business needs.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Payment Processing</li>
+                <li>Merchant Services</li>
+                <li>Point of Sale Systems</li>
+                <li>E-commerce Solutions</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Ready to optimize your payment solutions? Let's connect!</p>
+            <p>Phone: <a href="tel:3343012781">334-301-2781</a></p>
+            <p>Email: <a href="mailto:heatherglenn@FMpay.com">heatherglenn@FMpay.com</a></p>
+            <form>
+                <input type="email" placeholder="Your email" required>
+                <button type="submit">Stay Updated</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Heather Glenn - FM Payments. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for smooth scrolling will be added here
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heather Glenn - National Account Executive | FM Payments</title>
+    <style>
+        :root {
+            --primary-color: #006747;
+            --secondary-color: #FFD700;
+            --text-color: #333;
+            --background-color: #F8F8F8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h1, h2 {
+            color: var(--primary-color);
+        }
+
+        #hero {
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        #hero img {
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        #services ul {
+            list-style-type: none;
+        }
+
+        #services li::before {
+            content: "✓";
+            color: var(--primary-color);
+            margin-right: 0.5rem;
+        }
+
+        form {
+            display: flex;
+            margin-top: 1rem;
+        }
+
+        input[type="email"] {
+            flex-grow: 1;
+            padding: 0.5rem;
+            border: 1px solid var(--primary-color);
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+
+            form {
+                flex-direction: column;
+            }
+
+            input[type="email"], button {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- The rest of the HTML content remains the same -->
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
