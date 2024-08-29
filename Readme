@@ -1,0 +1,51 @@
+Heather Glenn - National Account Executive at FM Payments
+
+## Project Overview
+
+This repository contains the source code for Heather Glenn's professional website. The site serves as a virtual business card, showcasing Heather's role as a National Account Executive at FM Payments.
+
+## Features
+
+- Single-page design
+- Responsive layout for mobile, tablet, and desktop
+- Modern, clean aesthetic with a professional focus
+- Smooth scrolling navigation
+- Call-to-action for contacting Heather
+- Email signup form for updates
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Netlify (for hosting)
+
+## Setup and Deployment
+
+1. Clone this repository to your local machine.
+2. Make any necessary changes to the HTML, CSS, or JavaScript files.
+3. Commit and push your changes to GitHub.
+4. Connect your GitHub repository to Netlify for automatic deployment.
+
+## Local Development
+
+To run this project locally:
+
+1. Open the project folder in your preferred code editor.
+2. Use a local server (like Live Server in VS Code) to view the website.
+3. Make changes and refresh your browser to see updates.
+
+## Contact Information
+
+For any inquiries or collaboration opportunities, please contact Heather Glenn:
+
+- Phone: 334-301-2781
+- Email: heatherglenn@FMpay.com
+
+## Contributing
+
+This is a personal website for Heather Glenn. If you notice any issues or have suggestions for improvements, please open an issue in this repository.
+
+## License
+
+This project is private and not open for public use or distribution without permission.
