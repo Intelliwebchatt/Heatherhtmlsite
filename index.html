@@ -7,12 +7,11 @@
     <title>Heather Glenn - National Account Executive | FM Payments</title>
     <style>
         :root {
-            --primary-color: #006400;
-            --secondary-color: #f0f0f0;
+            --primary-color: #4a6741;
+            --secondary-color: #e0e7dd;
             --text-color: #333;
-            --background-color: #ffffff;
+            --background-color: #f5f5f5;
         }
-
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
@@ -21,117 +20,122 @@
             margin: 0;
             padding: 0;
         }
-
         header {
             background-color: var(--primary-color);
             color: white;
+            text-align: center;
             padding: 1rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-
         nav ul {
-            display: flex;
-            justify-content: center;
             list-style-type: none;
             padding: 0;
+            display: flex;
+            justify-content: center;
         }
-
         nav ul li {
-            margin: 0 1rem;
+            margin: 0 15px;
         }
-
         nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: bold;
+            transition: all 0.3s ease;
         }
-
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
         main {
+            padding: 20px;
             max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
+            margin: 0 auto;
         }
-
-        section {
-            background-color: var(--secondary-color);
-            padding: 2rem;
+        #hero {
+            text-align: center;
             margin-bottom: 2rem;
+            background-color: white;
+            padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-
-        #hero {
-            text-align: center;
-            background-color: var(--background-color);
-        }
-
         #hero img {
             width: 200px;
             height: 200px;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 1rem;
-            border: 4px solid var(--primary-color);
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border: 3px solid var(--primary-color);
         }
-
-        #hero h1 {
+        h1 {
+            color: var(--primary-color);
             font-size: 2rem;
-            color: var(--primary-color);
             margin-bottom: 0.5rem;
         }
-
-        #hero h2 {
-            font-size: 1.5rem;
-            color: var(--text-color);
-            margin-bottom: 0.5rem;
-        }
-
-        #hero .company-name {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            font-weight: bold;
-        }
-
         h2 {
-            color: var(--primary-color);
+            color: var(--text-color);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
         }
-
-        #services ul {
+        #company-name {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        .section {
+            background-color: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .services ul {
             list-style-type: none;
             padding: 0;
         }
-
-        #services li::before {
+        .services li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--secondary-color);
+        }
+        .services li:last-child {
+            border-bottom: none;
+        }
+        .services li:before {
             content: "✓";
             color: var(--primary-color);
-            margin-right: 0.5rem;
+            margin-right: 10px;
+            font-weight: bold;
         }
-
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+        }
         form {
+            margin-top: 1rem;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
         }
-
         input[type="email"] {
             padding: 0.5rem;
-            margin-bottom: 1rem;
+            width: 60%;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
         }
-
         button {
             background-color: var(--primary-color);
             color: white;
             border: none;
             padding: 0.5rem 1rem;
             cursor: pointer;
+            border-radius: 0 4px 4px 0;
+            transition: background-color 0.3s;
         }
-
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
+        button:hover {
+            background-color: #3a5233;
         }
     </style>
 </head>
@@ -151,27 +155,27 @@
             <img src="2024-08-28-17-34-19-795~3.jpg" alt="Heather Glenn" />
             <h1>Heather Glenn</h1>
             <h2>National Account Executive</h2>
-            <p class="company-name">FM Payments</p>
+            <div id="company-name">FM Payments</div>
         </section>
 
-        <section id="about">
+        <section id="about" class="section">
             <h2>About Me</h2>
-            <p>As a National Account Executive at FM Payments, I'm dedicated to providing innovative payment solutions tailored to your business needs.</p>
+            <p>As a National Account Executive at FM Payments, I'm dedicated to providing innovative payment solutions tailored to your business needs. With years of experience in the industry, I understand the unique challenges businesses face and am committed to delivering personalized service to help you succeed.</p>
         </section>
 
-        <section id="services">
+        <section id="services" class="section services">
             <h2>Our Services</h2>
             <ul>
-                <li>Payment Processing</li>
-                <li>Merchant Services</li>
-                <li>Point of Sale Systems</li>
-                <li>E-commerce Solutions</li>
+                <li>Comprehensive Payment Processing</li>
+                <li>Customized Merchant Services</li>
+                <li>Advanced Point of Sale Systems</li>
+                <li>Seamless E-commerce Solutions</li>
             </ul>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="section">
             <h2>Get in Touch</h2>
-            <p>Ready to optimize your payment solutions? Let's connect!</p>
+            <p>Ready to optimize your payment solutions? Let's connect and explore how FM Payments can elevate your business!</p>
             <p>Phone: <a href="tel:3343012781">334-301-2781</a></p>
             <p>Email: <a href="mailto:heatherglenn@FMpay.com">heatherglenn@FMpay.com</a></p>
             <form>
