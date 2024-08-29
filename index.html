@@ -1,4 +1,4 @@
-``
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,134 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heather Glenn - National Account Executive | FM Payments</title>
     <style>
-        :root {
-            --primary-color: #006747;
-            --secondary-color: #FFD700;
-            --text-color: #333;
-            --background-color: #F8F8F8;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--background-color);
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
-
         header {
-            background-color: var(--primary-color);
+            background-color: #006747;
             color: white;
+            text-align: center;
             padding: 1rem;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
         }
-
         nav ul {
-            display: flex;
-            justify-content: center;
             list-style-type: none;
+            padding: 0;
         }
-
         nav ul li {
-            margin: 0 1rem;
+            display: inline;
+            margin-right: 10px;
         }
-
         nav ul li a {
             color: white;
             text-decoration: none;
         }
-
         main {
+            padding: 20px;
             max-width: 800px;
             margin: 0 auto;
-            padding: 2rem;
-            padding-top: 5rem;
         }
-
-        section {
-            margin-bottom: 2rem;
-        }
-
-        h1, h2 {
-            color: var(--primary-color);
-        }
-
         #hero {
             text-align: center;
-            padding: 2rem 0;
+            margin-bottom: 2rem;
         }
-
         #hero img {
             width: 200px;
             height: 200px;
-            object-fit: cover;
             border-radius: 50%;
+            object-fit: cover;
             margin-bottom: 1rem;
         }
-
-        #services ul {
+        h1, h2 {
+            color: #006747;
+        }
+        .services ul {
             list-style-type: none;
+            padding: 0;
         }
-
-        #services li::before {
+        .services li:before {
             content: "✓";
-            color: var(--primary-color);
-            margin-right: 0.5rem;
+            color: #006747;
+            margin-right: 5px;
         }
-
+        footer {
+            background-color: #006747;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
         form {
-            display: flex;
             margin-top: 1rem;
         }
-
         input[type="email"] {
-            flex-grow: 1;
             padding: 0.5rem;
-            border: 1px solid var(--primary-color);
+            width: 100%;
+            margin-bottom: 0.5rem;
         }
-
         button {
-            background-color: var(--primary-color);
+            background-color: #006747;
             color: white;
             border: none;
             padding: 0.5rem 1rem;
             cursor: pointer;
-        }
-
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-
-        @media (max-width: 600px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav ul li {
-                margin: 0.5rem 0;
-            }
-
-            form {
-                flex-direction: column;
-            }
-
-            input[type="email"], button {
-                width: 100%;
-                margin-bottom: 0.5rem;
-            }
         }
     </style>
 </head>
@@ -150,7 +98,7 @@
 
     <main>
         <section id="hero">
-            <img src="https://user-images.githubusercontent.com/153387401/296557982-6133b27e-e1e8-4bcc-98d3-40eacfced4e4.jpg" alt="Heather Glenn" />
+            <img src="https://github.com/Intelliwebchatt/Heatherhtmlsite/assets/152108445/2b666dcb-e0c0-4dbe-b1f8-5ab52a738c2f" alt="Heather Glenn" />
             <h1>Heather Glenn</h1>
             <h2>National Account Executive</h2>
             <p>FM Payments</p>
@@ -161,7 +109,7 @@
             <p>As a National Account Executive at FM Payments, I'm dedicated to providing innovative payment solutions tailored to your business needs.</p>
         </section>
 
-        <section id="services">
+        <section id="services" class="services">
             <h2>Our Services</h2>
             <ul>
                 <li>Payment Processing</li>
@@ -175,7 +123,7 @@
             <h2>Get in Touch</h2>
             <p>Ready to optimize your payment solutions? Let's connect!</p>
             <p>Phone: <a href="tel:3343012781">334-301-2781</a></p>
-            <p>Email: <a href="mailto:heatherglenn@FM-pay.com">heatherglenn@FM-pay.com</a></p>
+            <p>Email: <a href="mailto:heatherglenn@FMpay.com">heatherglenn@FMpay.com</a></p>
             <form>
                 <input type="email" placeholder="Your email" required>
                 <button type="submit">Stay Updated</button>
@@ -186,17 +134,6 @@
     <footer>
         <p>&copy; 2024 Heather Glenn - FM Payments. All rights reserved.</p>
     </footer>
-
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
+
