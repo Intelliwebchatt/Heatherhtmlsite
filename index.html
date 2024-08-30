@@ -186,10 +186,63 @@
             <p>Phone: <a href="tel:3343012781">334-301-2781</a></p>
             <p>Email: <a href="mailto:heatherglenn@FM-pay.com">heatherglenn@FM-pay.com</a></p>
             <form>
-                <input type="email" placeholder="Your email" required>
-                <button type="submit">Stay Updated</button>
+                !DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (previous head content remains the same) ... -->
+    <style>
+        /* ... (previous styles remain the same) ... */
+
+        /* Add these new styles for the form */
+        form {
+            display: grid;
+            gap: 1rem;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button[type="submit"] {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        button[type="submit"]:hover {
+            background-color: #6ab33a;
+        }
+    </style>
+</head>
+<body>
+    <!-- ... (previous body content remains the same) ... -->
+
+    <main>
+        <!-- ... (previous sections remain the same) ... -->
+
+        <section id="contact" class="section">
+            <h2>Get in Touch</h2>
+            <p>Ready to optimize your payment solutions and have fun saving money? Let's connect!</p>
+            <p>Phone: <a href="tel:3343012781">334-301-2781</a></p>
+            <p>Email: <a href="mailto:heatherglenn@FM-pay.com">heatherglenn@FM-pay.com</a></p>
+            
+            <form name="contact" method="POST" data-netlify="true">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
             </form>
         </section>
+    </main>
+
+    <!-- ... (footer remains the same) ... -->
+</body>
+</html>
+```
     </main>
 
     <footer>
