@@ -1,157 +1,47 @@
-
+ I 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heather Glenn - FM Payments | Where we have fun saving you money</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Heather Glenn - FM Payments</title>
     <style>
-        :root {
-            --primary-color: #7DCA45;
-            --text-color: #ffffff;
-            --background-color: #000000;
-            --section-background: #111111;
-        }
-
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--background-color);
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #000000;
+            color: #ffffff;
         }
-
-        header {
-            background-color: var(--primary-color);
-            color: var(--background-color);
+        header, footer {
+            background-color: #7DCA45;
+            color: #000000;
+            text-align: center;
             padding: 1rem;
-            box-shadow: 0 2px 4px rgba(255,255,255,0.1);
         }
-
         nav ul {
-            display: flex;
-            justify-content: center;
             list-style-type: none;
             padding: 0;
-            margin: 0;
         }
-
         nav ul li {
-            margin: 0 1rem;
+            display: inline;
+            margin: 0 10px;
         }
-
         nav ul li a {
-            color: var(--background-color);
+            color: #000000;
             text-decoration: none;
-            font-weight: bold;
         }
-
         main {
-            max-width: 100%;
-            padding: 2rem 0;
-            background-color: var(--background-color);
-        }
-
-        .section {
+            padding: 20px;
             max-width: 800px;
-            margin: 0 auto 2rem;
-            padding: 2rem;
-            background-color: var(--section-background);
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(255,255,255,0.1);
+            margin: 0 auto;
         }
-
-        #hero {
-            text-align: center;
-            background-color: var(--primary-color);
-            color: var(--background-color);
-            padding: 3rem 2rem;
+        .section {
+            margin-bottom: 20px;
         }
-
-        #hero img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 1rem;
-            border: 4px solid var(--background-color);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-
-        #hero h1, #hero h2, #hero .company-name, #hero .tagline {
-            color: var(--background-color);
-        }
-
-        h2 {
-            color: var(--primary-color);
-        }
-
-        #services ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        #services li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid var(--primary-color);
-        }
-
-        #services li:last-child {
-            border-bottom: none;
-        }
-
-        #services li::before {
-            content: "✓";
-            color: var(--primary-color);
-            margin-right: 0.5rem;
-        }
-
-        form {
-            display: grid;
-            gap: 1rem;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 0.5rem;
-            border: 1px solid var(--primary-color);
-            border-radius: 4px;
-            background-color: var(--background-color);
-            color: var(--text-color);
-        }
-
-        button[type="submit"] {
-            background-color: var(--primary-color);
-            color: var(--background-color);
-            border: none;
-            padding: 0.5rem 1rem;
-            cursor: pointer;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-
-        button[type="submit"]:hover {
-            background-color: #6ab33a;
-        }
-
-        footer {
-            background-color: var(--primary-color);
-            color: var(--background-color);
-            text-align: center;
-            padding: 1rem;
-            box-shadow: 0 -2px 4px rgba(255,255,255,0.1);
-        }
-
-        a {
-            color: var(--primary-color);
-        }
-
-        @media (max-width: 840px) {
-            .section {
-                margin: 0 1rem 2rem;
-            }
+        h1, h2 {
+            color: #7DCA45;
         }
     </style>
 </head>
@@ -166,14 +56,36 @@
         </nav>
     </header>
 
-    <script src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="33141"></script>
-
     <main>
-        <!-- The rest of the HTML content remains the same -->
+        <section id="about" class="section">
+            <h1>Heather Glenn</h1>
+            <h2>National Account Executive - FM Payments</h2>
+            <p>Where we have fun saving you money</p>
+        </section>
+
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Payment Processing</li>
+                <li>Merchant Services</li>
+                <li>Point of Sale Systems</li>
+                <li>E-commerce Solutions</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: heatherglenn@FM-pay.com</p>
+            <p>Phone: 334-301-2781</p>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Heather Glenn - FM Payments. All rights reserved.</p>
     </footer>
+
+    <script src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="33141"></script>
 </body>
 </html>
+```
+
