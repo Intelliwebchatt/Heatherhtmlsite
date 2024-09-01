@@ -202,20 +202,20 @@
                 <button type="submit">Send Message</button>
             </form>
         </section>
+        
+        <!-- Chatbot iframe embedded here -->
+        <section id="chatbot" class="section">
+            <h2>Chat with Us</h2>
+            <iframe 
+                src="https://app.aminos.ai/embed/chat_plugin/33141" 
+                style="width: 100%; height: 500px; border: none;"
+                title="Chatbot">
+            </iframe>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Heather Glenn - FM Payments. All rights reserved.</p>
     </footer>
-
-    <script>
-        // Lazy load the chat plugin
-        window.addEventListener('load', function() {
-            var script = document.createElement('script');
-            script.src = "https://app.aminos.ai/js/chat_plugin.js";
-            script.setAttribute('data-bot-id', "33141");
-            document.body.appendChild(script);
-        });
-    </script>
 </body>
 </html>
