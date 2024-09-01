@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -163,6 +164,10 @@
             box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
         }
 
+        .hidden {
+            display: none;
+        }
+
         @media (max-width: 840px) {
             .section {
                 margin: 0 1rem 2rem;
@@ -180,7 +185,7 @@
             </ul>
         </nav>
     </header>
-<script src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="33141"></script>
+    <script src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="33141"></script>
     <main>
         <section id="hero">
             <img src="2024-08-30-18-24-32-518.jpg" alt="Heather Glenn" />
@@ -211,10 +216,15 @@
             <p>Phone: <a href="tel:3343012781">334-301-2781</a></p>
             <p>Email: <a href="mailto:heatherglenn@FM-pay.com">heatherglenn@FM-pay.com</a></p>
             
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="POST" data-netlify="true" action="/success" data-netlify-recaptcha="true">
+                <input type="hidden" name="form-name" value="contact">
+                <p class="hidden">
+                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                </p>
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <div data-netlify-recaptcha="true"></div>
                 <button type="submit">Send Message</button>
             </form>
         </section>
@@ -224,4 +234,5 @@
         <p>&copy; 2024 Heather Glenn - FM Payments. All rights reserved.</p>
     </footer>
 </body>
-</html>            
+</html>
+```
