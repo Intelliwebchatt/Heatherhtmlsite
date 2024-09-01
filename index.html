@@ -41,112 +41,112 @@
         nav ul li a {
             color: white;
             text-decoration: none;
-            font-weight: bold.
+            font-weight: bold;
         }
         main {
             max-width: 100%;
             padding: 2rem 0;
-            background-color: #f5f5f5.
+            background-color: #f5f5f5;
         }
         .section {
-            max-width: 800px.
-            margin: 0 auto 2rem.
-            padding: 2rem.
-            background-color: white.
-            border-radius: 8px.
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1).
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         #hero {
-            text-align: center.
-            background-color: var(--primary-color).
-            color: white.
-            padding: 3rem 2rem.
+            text-align: center;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 2rem;
         }
         #hero img {
-            width: 200px.
-            height: 200px.
-            border-radius: 50%.
-            object-fit: cover.
-            margin-bottom: 1rem.
-            border: 4px solid white.
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2).
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 4px solid white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
         #hero h1 {
-            font-size: 2.5rem.
-            color: white.
-            margin-bottom: 0.5rem.
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 0.5rem;
         }
         #hero h2 {
-            font-size: 1.8rem.
-            color: white.
-            margin-bottom: 0.5rem.
+            font-size: 1.8rem;
+            color: white;
+            margin-bottom: 0.5rem;
         }
         #hero .company-name {
-            font-size: 3rem.
-            color: white.
-            font-weight: bold.
-            margin-bottom: 0.5rem.
+            font-size: 3rem;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
         }
         #hero .tagline {
-            font-family: 'Pacifico', cursive.
-            font-size: 1.5rem.
-            color: white.
-            margin-bottom: 1rem.
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 1rem;
         }
         h2 {
-            color: var(--primary-color).
+            color: var(--primary-color);
         }
         #services ul {
-            list-style-type: none.
-            padding: 0.
+            list-style-type: none;
+            padding: 0;
         }
         #services li {
-            padding: 0.5rem 0.
-            border-bottom: 1px solid #eee.
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
         }
         #services li:last-child {
-            border-bottom: none.
+            border-bottom: none;
         }
         #services li::before {
-            content: "✓".
-            color: var(--primary-color).
-            margin-right: 0.5rem.
+            content: "✓";
+            color: var(--primary-color);
+            margin-right: 0.5rem;
         }
         form {
-            display: grid.
-            gap: 1rem.
+            display: grid;
+            gap: 1rem;
         }
         input, textarea {
-            width: 100%.
-            padding: 0.5rem.
-            border: 1px solid #ddd.
-            border-radius: 4px.
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
         }
         button[type="submit"] {
-            background-color: var(--primary-color).
-            color: white.
-            border: none.
-            padding: 0.5rem 1rem.
-            cursor: pointer.
-            border-radius: 4px.
-            transition: background-color 0.3s.
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
         }
         button[type="submit"]:hover {
-            background-color: #6ab33a.
+            background-color: #6ab33a;
         }
         footer {
-            background-color: var(--primary-color).
-            color: white.
-            text-align: center.
-            padding: 1rem.
-            box-shadow: 0 -2px 4px rgba(0,0,0,0.1).
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
         }
         .hidden {
-            display: none.
+            display: none;
         }
         @media (max-width: 840px) {
             .section {
-                margin: 0 1rem 2rem.
+                margin: 0 1rem 2rem;
             }
         }
     </style>
@@ -155,4 +155,65 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#about">About</
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <img src="2024-08-30-18-24-32-518.jpg" alt="Heather Glenn" width="200" height="200" fetchpriority="high">
+            <h1>Heather Glenn</h1>
+            <h2>National Account Executive</h2>
+            <p class="company-name">FM Payments</p>
+            <p class="tagline">Where we have fun saving you money</p>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>As a National Account Executive at FM Payments, I'm dedicated to providing innovative payment solutions tailored to your business needs. We believe in making the process of saving money enjoyable and rewarding for our clients.</p>
+        </section>
+
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Cutting-edge Payment Processing</li>
+                <li>Customized Merchant Services</li>
+                <li>State-of-the-art Point of Sale Systems</li>
+                <li>Comprehensive E-commerce Solutions</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Get in Touch</h2>
+            <p>Ready to optimize your payment solutions and have fun saving money? Let's connect!</p>
+            <p>Phone: <a href="tel:3343012781">334-301-2781</a></p>
+            <p>Email: <a href="mailto:heatherglenn@FM-pay.com">heatherglenn@FM-pay.com</a></p>
+            
+            <form name="contact" method="POST" data-netlify="true" action="/success">
+                <input type="hidden" name="form-name" value="contact">
+                <p class="hidden">
+                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                </p>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        
+        <!-- Chatbot section -->
+        <section id="chatbot" class="section">
+            <h2>Chat with Us</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Heather Glenn - FM Payments. All rights reserved.</p>
+    </footer>
+
+    <!-- Chatbot script placed at the end of the body -->
+    <script src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="33141"></script>
+</body>
+</html>
