@@ -1,34 +1,42 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heather Glenn - FM Payments | Where we have fun saving you money</title>
     <meta name="description" content="Heather Glenn, National Account Executive at FM Payments, provides custom payment solutions and advanced AI services tailored for business growth.">
-    <meta name="keywords" content="Heather Glenn, FM Payments, Payment Processing, Merchant Services, Point of Sale, E-commerce Solutions">
+
+    <!-- Favicon -->
     <link rel="icon" href="images/favicon.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&family=Roboto:700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- AOS Library CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8/swiper-bundle.min.css" />
 
     <!-- Google Analytics Tracking Code -->
+    <!-- Replace 'G-XXXXXXXXXX' with your actual Tracking ID -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');  // Replace with your actual GA Tracking ID
+        gtag('config', 'G-XXXXXXXXXX');
     </script>
 
     <!-- OneSignal Push Notification Integration -->
+    <!-- Replace 'YOUR-ONESIGNAL-APP-ID' with your actual OneSignal App ID -->
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
     <script>
         var OneSignal = window.OneSignal || [];
         OneSignal.push(function() {
             OneSignal.init({
-                appId: "YOUR-ONESIGNAL-APP-ID", // Replace with OneSignal App ID
+                appId: "YOUR-ONESIGNAL-APP-ID",
                 notifyButton: {
                     enable: true,
                 },
@@ -37,220 +45,28 @@
     </script>
 
     <!-- Register Service Worker for Caching -->
-    <script src="service_worker.js"></script>
-<style>
-    * {
-        box-sizing: border-box;
-    }
-
-    /* General Styles */
-    body {
-        background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
-        color: #7DCA45;
-        font-family: 'Roboto', sans-serif;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; /* Prevent horizontal scroll */
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Hero Section */
-    #hero {
-        position: relative;
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-image: url('https://raw.githubusercontent.com/Intelliwebchatt/Heatherhtmlsite/refs/heads/main/2024-08-30-18-24-32-518.jpg');
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #hero::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 1;
-    }
-
-    #hero > * {
-        position: relative;
-        z-index: 2;
-    }
-
-    #header-content h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: 4rem;
-        color: #FFFFFF;
-        margin-bottom: 20px;
-    }
-
-    #book-now-button {
-        margin-top: 20px;
-    }
-
-    /* Buttons */
-    .btn {
-        padding: 10px 20px;
-        background: linear-gradient(145deg, #004d00, #002d00);
-        color: #C0C0C0;
-        text-decoration: none;
-        font-size: 1.2rem;
-        border-radius: 5px;
-        border: none;
-        box-shadow: 5px 5px 10px #0d0d0d, -5px -5px 10px #262626;
-        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    }
-
-    .btn:hover {
-        background: linear-gradient(145deg, #002d00, #004d00);
-        box-shadow: inset 5px 5px 10px #0d0d0d, inset -5px -5px 10px #262626;
-        transform: scale(1.05);
-    }
-
-    /* Sections */
-    section {
-        padding: 80px 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-
-    /* Container Class */
-    .container {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
-
-    /* Headings */
-    h2 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-
-    h3 {
-        font-size: 2rem;
-        font-weight: 600;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    p {
-        font-size: 1.1rem;
-        line-height: 1.6;
-        margin-bottom: 20px;
-    }
-
-    /* Cards */
-    .pro-series-card, .service-card {
-        background: linear-gradient(145deg, #004d00, #002d00);
-        padding: 30px;
-        margin: 20px auto;
-        text-align: center;
-        box-shadow: 10px 10px 20px #0d0d0d, -10px -10px 20px #262626;
-        border-radius: 10px;
-        width: calc(100% - 40px); /* Account for padding/margin */
-        max-width: 700px;
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-    }
-
-    .pro-series-card:hover, .service-card:hover {
-        transform: scale(1.05);
-        box-shadow: 10px 10px 20px #0d0d0d, -10px -10px 20px #262626;
-    }
-
-    .services {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        gap: 30px;
-        padding: 0;
-        margin: 0;
-    }
-
-    @media (min-width: 768px) {
-        .services {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service_worker.js')
+            .then(function(registration) {
+                console.log('Service Worker registered with scope:', registration.scope);
+            })
+            .catch(function(error) {
+                console.log('Service Worker registration failed:', error);
+            });
         }
-
-        .service-card {
-            width: calc(50% - 40px); /* Adjust width for spacing */
-            margin: 20px;
-        }
-    }
-
-    /* Payment Form */
-    #payment form {
-        max-width: 500px;
-        margin: 0 auto;
-    }
-
-    #card-element {
-        background-color: #1a1a1a;
-        padding: 15px;
-        border-radius: 5px;
-        margin-bottom: 20px;
-    }
-
-    /* Contact Form */
-    #contact form {
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    #contact form input, #contact form textarea {
-        width: 100%;
-        padding: 15px;
-        margin-bottom: 20px;
-        background-color: #1a1a1a;
-        color: #c0c0c0;
-        border: none;
-        border-radius: 5px;
-    }
-
-    #contact form input::placeholder, #contact form textarea::placeholder {
-        color: #888;
-    }
-
-    /* Footer */
-    footer {
-        background-color: #0d0d0d;
-        padding: 40px 0;
-        text-align: center;
-        color: #7DCA45;
-    }
-
-    footer .social-media {
-        margin-bottom: 20px;
-    }
-
-    footer .social-media a img {
-        width: 30px;
-        margin: 0 10px;
-    }
-</style>
+    </script>
 </head>
 <body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="information.html">Information</a></li>
+            <li><a href="classroom.html">Classroom</a></li>
+        </ul>
+    </nav>
 
     <!-- Hero Section -->
     <section id="hero" class="parallax">
@@ -260,15 +76,13 @@
             <p class="company-name">FM Payments</p>
             <p class="tagline">Where we have fun saving you money</p>
         </header>
-        <a href="#contact" class="btn" id="book-now-button" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Contact Heather</a>
+        <a href="#contact" class="btn animate__animated" id="book-now-button" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Contact Heather</a>
     </section>
 
     <!-- About / Services Section -->
-    <section id="about">
+    <section id="about" class="section-gap content-section">
         <div class="container">
             <h2 data-aos="fade-in">Our Services</h2>
-
-            <!-- Remaining Services wrapped in individual cards -->
             <div class="services">
                 <div class="service-card" data-aos="fade-up" data-aos-duration="1000">
                     <h3>Customized Payment Processing</h3>
@@ -290,22 +104,30 @@
         </div>
     </section>
 
-    <!-- White Man Holding Money GIF Section -->
+    <!-- Gap Section for Parallax Effect -->
+    <section class="section-gap">
+        <!-- Empty section to allow background to show through -->
+    </section>
+
+    <!-- GIF Section -->
     <section id="gif-section" class="parallax">
         <div class="container">
             <div class="gif-content" data-aos="fade-up" data-aos-duration="1500">
-                <img src="https://github.com/Intelliwebchatt/Heatherhtmlsite/blob/23f6c7084dd9006a0c17d3fc28013fbd65ef55c3/1uJ9.gif?raw=true" alt="White man holding money, jumping up and down" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                <img src="images/1uJ9.gif" alt="White man holding money, jumping up and down">
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="section-gap content-section">
         <h2>Get in Touch</h2>
         <form action="/thank-you" method="POST" data-netlify="true">
-            <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
-            <textarea name="message" placeholder="Your Message" aria-label="Your Message" required></textarea>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" aria-label="Your Name" required>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" aria-label="Your Message" required></textarea>
             <button type="submit" class="btn">Submit</button>
         </form>
     </section>
@@ -325,11 +147,11 @@
 
     <!-- AOS Library JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-    </script>
+    <!-- Animate.css Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Custom Scripts -->
+    <script src="scripts.js"></script>
+
 </body>
 </html>
