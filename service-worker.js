@@ -1,11 +1,17 @@
-const CACHE_NAME = 'heather-glenn-cache-v1';
+const CACHE_NAME = 'heather-glenn-cache-v2';
 const FILES_TO_CACHE = [
     '/',
     '/index.html',
+    '/information.html',
+    '/classroom.html',
     '/styles.css',
     '/scripts.js',
-    '/eyes.gif',
-    'https://fonts.googleapis.com/css?family=Playfair+Display:700&family=Roboto:700&display=swap'
+    '/images/eyes.gif',
+    '/images/1uJ9.gif',
+    'https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans&display=swap',
+    'https://unpkg.com/aos@2.3.1/dist/aos.css',
+    'https://unpkg.com/aos@2.3.1/dist/aos.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
 ];
 
 // Install the service worker and cache the files
