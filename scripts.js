@@ -1,42 +1,35 @@
-const CACHE_NAME = 'heather-glenn-cache-v1';
-const FILES_TO_CACHE = [
-    '/',
-    '/index.html',
-    '/styles.css',
-    '/scripts.js',
-    '/eyes.gif',
-    'https://fonts.googleapis.com/css?family=Playfair+Display:700&family=Roboto:700&display=swap'
-];
-
-// Install the service worker and cache the files
-self.addEventListener('install', (event) => {
-    event.waitUntil(
-        caches.open(CACHE_NAME).then((cache) => {
-            return cache.addAll(FILES_TO_CACHE);
-        })
-    );
+// Animate On Scroll Initialization
+AOS.init({
+    duration: 1000,
+    once: true
 });
 
-// Activate the service worker and clean up old caches
-self.addEventListener('activate', (event) => {
-    event.waitUntil(
-        caches.keys().then((cacheNames) => {
-            return Promise.all(
-                cacheNames.map((cache) => {
-                    if (cache !== CACHE_NAME) {
-                        return caches.delete(cache);
-                    }
-                })
-            );
-        })
-    );
-});
+// Animate.css Animation on Scroll
+const animateOnScroll = () => {
+    const elements = document.querySelectorAll('.animate__animated');
 
-// Fetch cached files or get them from the network if not cached
-self.addEventListener('fetch', (event) => {
-    event.respondWith(
-        caches.match(event.request).then((response) => {
-            return response || fetch(event.request);
-        })
-    );
+    elements.forEach(element => {
+        const rect = element.getBoundingClientRect();
+        const elemTop = rect.top;
+        const elemBottom = rect.bottom;
+
+        const isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+
+        if (isVisible) {
+            element.classList.add('animate__bounceIn');
+        }
+    });
+};
+
+window.addEventListener('scroll', animateOnScroll);
+window.addEventListener('load', animateOnScroll);
+
+// Change Button Style on Scroll
+window.addEventListener('scroll', () => {
+    const button = document.getElementById('book-now-button');
+    if (window.scrollY > 200) {
+        button.classList.add('scrolled');
+    } else {
+        button.classList.remove('scrolled');
+    }
 });
